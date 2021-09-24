@@ -66,7 +66,7 @@ def generator(longitud, cantidad):
     while len(primos) < 5:
         numero = np.random.randint(numb, numb*100)
         if testFermat(numero,5)[0]==True:
-            print('Se genero un primo')
+            print('Se genero un primo ')
             primos.append(numero)
         else:
             pass
