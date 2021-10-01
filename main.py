@@ -21,6 +21,8 @@ print(modInverse(65,17316))
 print('\n Fermat test')
 #FALTA COMPARAR CON EL VALOR DE LA TABLA DE PRIMOS PARA COMPROBAR EFICACIA
 #1317,2709,3257,3911,4279,5497,6311,7223,8431,9203.
+teoricos = [3257, 3911, 6311, 8431, 9203]
+numeros = [1317, 2709, 3257, 3911, 4279, 5497, 6311, 7223, 8431, 9203]
 print(testFermat(1317,5))
 print(testFermat(2709,5))
 print(testFermat(3257,5))
@@ -31,6 +33,11 @@ print(testFermat(6311,5))
 print(testFermat(7223,5))
 print(testFermat(8431,5))
 print(testFermat(9203,5))
+
+for x in numeros:
+    if (x in teoricos):
+        print(str(x) + " teoricamente, es un numero primo")
+
 
 #Generador
 print('\n Generator of primes with Fermat')
